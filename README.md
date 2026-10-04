@@ -21,6 +21,12 @@ An advanced, Basel-compliant credit risk framework built to estimate consumer de
 | **Logistic Regression Scorecard** | 0.7085 | 0.4169 |
 | **Random Forest Challenger** | 0.7096 | 0.4192 |
 
+
+## 🤖 Machine Learning Implementation
+Implemented an ensemble **Machine Learning (ML)** pipeline using `scikit-learn`:
+* **Algorithm:** Random Forest Classifier (`n_estimators=100`, `max_depth=10`, stratified split).
+* **Objective:** Capture non-linear customer behavioral interactions.
+
 * **Key Finding:** The traditional econometric WoE Logistic framework captures nearly identical risk gradients compared to the advanced Random Forest setup, highlighting the immense value of strategic variable binning.
 
 ## Requirements
