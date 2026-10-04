@@ -11,11 +11,12 @@ An advanced, Basel-compliant credit risk framework built to estimate consumer de
 * **Target Optimization:** The dependent variable (`loan_status`) was structurally mapped to a binary representation: `1` for default events (`Charged Off`, `Default`) and `0` for performing credit (`Fully Paid`). 
 * **Leakage Control:** Post-origination and collection features were systematically omitted prior to ingestion to eliminate hindsight bias.
 * **Weight of Evidence (WoE):** Continuous and dense fields were parsed into distinct data groups to maximize predictive stability and linearize relationship mechanics with loan outcomes:
-  \[\text{WoE} = \ln \left( \frac{\% \text{ of Performing Borrowers in Bin}}{\% \text{ of Defaulted Borrowers in Bin}} \right)\]
+
+  **WoE = ln( % of Performing Borrowers in Bin / % of Defaulted Borrowers in Bin )**
 
 ## 📊 Empirical Performance Summary
 
-| Predictive Framework | ROC-AUC | Gini Coefficient (\(2 \times \text{AUC} - 1\)) |
+| Predictive Framework | ROC-AUC | Gini Coefficient (2 × AUC - 1) |
 | :--- | :--- | :--- |
 | **Logistic Regression Scorecard** | 0.7085 | 0.4169 |
 | **Random Forest Challenger** | 0.7096 | 0.4192 |
