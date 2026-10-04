@@ -22,3 +22,10 @@ An advanced, Basel-compliant credit risk framework built to estimate consumer de
 | **Random Forest Challenger** | 0.7096 | 0.4192 |
 
 * **Key Finding:** The traditional econometric WoE Logistic framework captures nearly identical risk gradients compared to the advanced Random Forest setup, highlighting the immense value of strategic variable binning.
+
+## Requirements
+* `pandas`
+* `numpy`
+* `statsmodels`
+* `scikit-learn`
+* `matplotlib`
